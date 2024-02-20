@@ -1,10 +1,13 @@
-import React from "react";
 import {StyleSheet, Text, View } from "react-native";
-
+import Navigation from "./containers/Navigation";
 import AppRoot from "./src/AppRoot";
-
+import 'react-native-gesture-handler';
+import React from 'react';
+ 
 function App() {
-  return <View style={styles.container}><Text>Hello, World !</Text></View>;
+  return  (
+      <Navigation />
+  );
 
 }
 
