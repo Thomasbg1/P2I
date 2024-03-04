@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import MapView from 'react-native-maps';
+import { Marker } from "react-native-maps";
 
 
 function MapScreen() {
@@ -13,8 +14,15 @@ function MapScreen() {
         longitude: -0.57918,
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421,
-      }}>
-
+      }} >
+         <Marker coordinate = {{latitude: 44.837789,longitude: -0.57918}}
+         pinColor = {"purple"}  
+         title={"Oeuvre cool"}
+         description={"C'est vraiment cool"}/>
+             <Marker coordinate = {{latitude: 50.837789,longitude: -1.57918}}
+         pinColor = {"purple"}  
+         title={"Oeuvre cool"}
+         description={"C'est vraiment cool"}/>
       </MapView>
     </View>
   );
